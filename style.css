@@ -1,0 +1,139 @@
+```css
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #f4f4f4;
+}
+
+/* Cabeçalho */
+header{
+    background-color: #2e8b57;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1{
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+header h2{
+    font-size: 1.2rem;
+}
+
+/* Fundo ocupando toda a tela abaixo do cabeçalho */
+main{
+    background-image: url("https://images.unsplash.com/photo-1500937386664-56d1dfef3854");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: calc(100vh - 120px);
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px 20px;
+}
+
+/* Caixa principal */
+.conteudo{
+    background-color: rgba(255,255,255,0.88);
+    width: 90%;
+    max-width: 1000px;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+.conteudo h3{
+    color: #2e8b57;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.conteudo p{
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+/* Botão Saiba Mais */
+button{
+    background-color: white;
+    color: #2e8b57;
+    border: 2px solid #2e8b57;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 25px;
+}
+
+button:hover{
+    background-color: #2e8b57;
+    color: white;
+}
+
+#textoExtra{
+    margin-top: 15px;
+    margin-bottom: 25px;
+    text-align: justify;
+}
+
+/* Cards das perguntas */
+.perguntas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card{
+    background-color: white;
+    width: 300px;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.card h4{
+    color: #2e8b57;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.card p{
+    margin: 0;
+}
+
+/* Responsivo */
+@media(max-width: 768px){
+    .card{
+        width: 100%;
+    }
+
+    .conteudo{
+        width: 95%;
+    }
+
+    header h1{
+        font-size: 1.5rem;
+    }
+
+    .conteudo h3{
+        font-size: 1.5rem;
+    }
+}
+```
